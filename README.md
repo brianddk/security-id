@@ -6,17 +6,17 @@ The basic outline of the training sessions will consist of the following:
 
 1. [Learn Foundational Basis of Security](foundation.md)
 2. [Learn Shell Programming](shell.md)
-3. [Learn the GnuPG Application]()
-4. [Learn the Veracrypt Application]()
-5. [Learn the KeePass Application]()
-6. [Learn the OpenSSH Platform]()
-7. [Learn GIT and GitHub Platforms]()
-8. [Learn the Visual Studio Platform]()
-9. [Learn the C# Programming Language]()
-10. [Learn the GpgKee GitHub Project]()
-11. [Submit a PR for an improvement to GpgKee]()
-12. [Learn the Docker Build environment]()
-13. [Optimize GpgKee build environment to make it Deterministic]()
+3. [Learn the GnuPG Application]
+4. [Learn the Veracrypt Application]
+5. [Learn the KeePass Application]
+6. [Learn the OpenSSH Platform]
+7. [Learn GIT and GitHub Platforms]
+8. [Learn the Visual Studio Platform]
+9. [Learn the C# Programming Language]
+10. [Learn the GpgKee GitHub Project]
+11. [Submit a PR for an improvement to GpgKee]
+12. [Learn the Docker Build environment]
+13. [Optimize GpgKee build environment to make it Deterministic]
 
 
 Most of these sessions will be self paced and reference training from Microsoft, or other respected groups.  If the student does not yet have a Microsoft account at Microsoft.com or GitHub.com those will need to be created.  Most colleges include Microsoft membership as part of standard tuition, and those accounts seem to work well in the Microsoft Training environment.
