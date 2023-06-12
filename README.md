@@ -6,7 +6,8 @@ The basic outline of the training sessions will consist of the following:
 
 1. [Learn Foundational Basis of Security](foundation.md)
 2. [Learn Shell Programming](shell.md)
-3. Learn the GnuPG Application
+3. [Learn the GnuPG Application](gnupg.md)
+4. [Learn the Yubikey device](yubikey.md)
 4. Learn the Veracrypt Application
 5. Learn the KeePass Application
 6. Learn the OpenSSH Platform

@@ -1,6 +1,6 @@
 # Shell Programming
 
-[](https://en.wikipedia.org/wiki/Comparison_of_command_shells)
+[Comparison of different shells](https://en.wikipedia.org/wiki/Comparison_of_command_shells)
 
 ## Bash
 
