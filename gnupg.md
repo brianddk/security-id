@@ -48,5 +48,5 @@ This would create a directory calld gpg under the system TEMP directory pointed 
 1. Record what fields match and don't from the ***Verify Installer*** section.
 2. Review [gnupg.ps1](gnupg.ps1) to see the field match done in PowerShell
 2. From the [gpg manpage](https://www.gnupg.org/documentation/manuals/gnupg24/gpg.1.html) get all possible options using powershell: `gpg --dump-options | sort`
-3. Review the following GPG options: `--homedir`, `-k`, `--recv-key`, `--keyserver`, `--list-packets`, `--verify`, `--trusted-key`
+3. From [manpage](https://www.gnupg.org/documentation/manuals/gnupg24/gpg.1.html), review: `--homedir`, `-k`, `--recv-key`, `--keyserver`, `--list-packets`, `--verify`, `--trusted-key`
 4. Use `gpg --homedir "${env:temp}\gpg" --gen-key` to follow along in the first chapter of [GnuPG Handbook](https://www.gnupg.org/gph/en/manual.pdf)
