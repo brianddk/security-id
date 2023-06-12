@@ -17,7 +17,7 @@ https://files.gpg4win.org/doc/gpg4win-compendium-en.pdf), all GUI (Windows) base
 
 Although the first 5 chapters spoke to the utility of encrypting communication, the more common use is signing communications (Chapter 13).  This becomes useful in the form of an "***integrity check***".  This allows publishers to sign a file when it's published and allows users to verify that what they have is an ***EXACT*** copy of that originally published file.  This is critical because one of the most common attacks for trojans and viruses is to modify install files for popular utilities.
 
-Normally, integrity checks would be done with GPG.  But since you can't verify the GPG installer without the GPG, the first verification uses a Windows Authenticode Certificate.  Unlike PGP which uses ***web-of-trust*** (see Ch 5), Authenticode uses the Centralized Certificate Authority (CA) method (see Ch 5).  To simplify the process, Windows automagically trusts Authenticode CAs.
+Normally, integrity checks would be done with GPG.  But since you can't verify the GPG installer without GPG, the first verification uses a Windows Authenticode Certificate.  Unlike PGP which uses ***web-of-trust*** (see Ch 5), Authenticode uses the Centralized Certificate Authority (CA) method (see Ch 5).  To simplify the process, Windows automagically trusts Authenticode CAs.
 
 To manually validate the Authenticode certificate:
 
@@ -33,7 +33,7 @@ Now that the installer is verified just follow [chapter 6](https://files.gpg4win
 
 ## Create a Temporary Certificate / Key
 
-Per the manpage, the `gpg` utility allows you to use a `--homedir` option.  This will allow us to "practice" in a temporary directory until we are happy with the settings and comfortable with the key creation process.  Later we will learn to create our secure key data on a special encrypted storage.  Not strictly required, but it will provide a good introduction to the idea of handling secrets with great care.  Use the `--homedir` option to create a temporary key under the directory name "gpg" in the temp directory.  In powershell the `--homedir` option would look like:
+Per the [manpage](https://www.gnupg.org/documentation/manuals/gnupg24/gpg.1.html), the `gpg` utility allows you to use a `--homedir` option.  This will allow us to "practice" in a temporary directory until we are happy with the settings and comfortable with the key creation process.  Later we will learn to create our secure key data on a special encrypted storage.  Not strictly required, but it will provide a good introduction to the idea of handling secrets with great care.  Use the `--homedir` option to create a temporary key under the directory name "gpg" in the temp directory.  In powershell the `--homedir` option would look like:
 
     gpg --homedir "${env:temp}\gpg"
     
@@ -47,6 +47,6 @@ This would create a directory calld gpg under the system TEMP directory pointed 
 
 1. Record what fields match and don't from the ***Verify Installer*** section.
 2. Review [gnupg.ps1](gnupg.ps1) to see the field match done in PowerShell
-2. From the `gpg manpage` get all possible options using powershell: `gpg --dump-options | sort`
+2. From the [gpg manpage](https://www.gnupg.org/documentation/manuals/gnupg24/gpg.1.html) get all possible options using powershell: `gpg --dump-options | sort`
 3. Review the following GPG options: `--homedir`, `-k`, `--recv-key`, `--keyserver`, `--list-packets`, `--verify`, `--trusted-key`
 4. Use `gpg --homedir "${env:temp}\gpg" --gen-key` to follow along in the first chapter of [GnuPG Handbook](https://www.gnupg.org/gph/en/manual.pdf)
