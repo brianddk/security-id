@@ -12,15 +12,7 @@ https://learn.microsoft.com/en-us/training/paths/shell/
 
 ## Powershell
 
-Powershell is now the default shell for Windows.  It is a bit of a different beast than BASH and is object based instead of text based.  It is extreamly powerfull in Windows and a great shell to learn.  The first 4 modules should provide a good background to Powershell:
-
-* [Automate administrative tasks by using PowerShell](
-https://learn.microsoft.com/en-us/training/paths/powershell/
-) (Only first 4 modules only)
-
-## Powershell
-
-Powershell is now the default shell for Windows.  It is a bit of a different beast than BASH and is object based instead of text based.  It is extreamly powerfull in Windows and a great shell to learn.  The first 4 modules should provide a good background to Powershell:
+Powershell is now the default shell for Windows.  It is a bit of a different beast than BASH and is object based instead of text based.  It is extremely powerful in Windows and a great shell to learn.  Much like BASH, Powershell relies a lot on the idea of "redirection".  The concept where the output of one program becomes the input of another.  Powershell extends this idea since some commands will output Objects, not just text.  This allows process redirection on an Object Oriented basis.  So for Powershell, both forms of redirection (text and object) are supported.  Care needs to be taken to know which is happening and when.  The first 4 modules should provide a good background to Powershell:
 
 * [Automate administrative tasks by using PowerShell](
 https://learn.microsoft.com/en-us/training/paths/powershell/
